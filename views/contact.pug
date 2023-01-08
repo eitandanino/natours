@@ -1,0 +1,35 @@
+extend base
+
+block content 
+    main.main
+        section.section-contact
+            .aboutUs-form
+                h1.heading-secondary.ma-bt-lg(style='font-size: 4.5em') Contact Us
+                br
+                h2.form__label(style='font-size: 2.5em') Get in Touch
+                p(style='font-size: 1.5em')
+                    | At Natours, we are always happy to hear from our customers. Whether you have a question about one of our tours, a suggestion for how we can improve, or just want to say hello, we'd love to hear from you. You can reach us by phone, email, or through the form below. We'll do our best to get back to you as soon as possible.
+                h2.form__label(style='font-size: 2.5em') Phone
+                p(style='font-size: 1.5em')
+                    | Phone: 555-555-5555
+                h2.form__label(style='font-size: 2.5em') Email
+                p(style='font-size: 1.5em')
+                    | Email: info@natours.com
+                h2.form__label(style='font-size: 2.5em') Address
+                p(style='font-size: 1.5em')
+                    | Address: 123 Main Street, Anytown USA 12345
+                h2.form__label(style='font-size: 2.5em') Send Us a Message
+                p(style='font-size: 1.5em')
+                    | If you have a question or comment that you'd like to send our way, please use the form below. We'll do our best to get back to you as soon as possible.
+                br
+                form.section-contact__form
+                    .wrap-input100.validate-input(data-validate='Please enter your name')
+                        input.input100(type='text' name='name' placeholder='Full Name')
+                        span.focus-input100
+                    .wrap-input100.validate-input(data-validate='Please enter your name')
+                        input.input100(type='text' name='email' placeholder='Email')
+                        span.focus-input100
+                    .wrap-input100.validate-input(data-validate='Please enter your message')
+                        textarea.input200(name='message' placeholder='Your Message')
+                        span.focus-input100
+
