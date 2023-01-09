@@ -8,7 +8,7 @@
     "dev:start": "nodemon server.js",
     "start:prod": "NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js",
-    "watch:js": "npx parcel watch ./public/js/index.js --out-dir ./public/js --out-file ./bundle.js --public-url .",
+    "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file ./bundle.js --public-url .",
     "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file ./bundle.js --public-url ."
   },
   "author": "tantan",
@@ -41,6 +41,7 @@
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
+    "parcel-bundler": "^1.12.5",
     "prettier": "^2.8.1"
   },
   "engines": {

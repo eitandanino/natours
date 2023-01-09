@@ -6,6 +6,7 @@ import { updateSettings } from './updateSettings';
 import { signup } from './signup';
 import { forgotPassword, resetPassword } from './forgotPassword';
 import { bookTour } from './stripe';
+import { showAlert } from './alerts';
 
 // DOM elements
 const mapBox = document.getElementById('map');
@@ -107,3 +108,5 @@ if (resetPasswordBtn) {
     resetPassword(password, passwordConfirm);
   });
 }
+const alertMessage = document.querySelector('body').dataset.alert;
+if (alertMessage) showAlert('success', alertMessage, 20);
